@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link href='https://fonts.googleapis.com/css?family=Asset' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </head>
+    <body>
+    <script>
+        window.addEventListener("mouseover",play);
+window.addEventListener("click",play);
+function play() { document.getElementById("a").play();
+}
+    </script>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    
+}
+
+.page1{
+    height:100vh;
+    width:100vw;
+    background-image: repeating-linear-gradient(148deg, rgba(0,0,0,0.03) 0px, rgba(0,0,0,0.03) 12px,transparent 12px, transparent 13px,rgba(0,0,0,0.03) 13px, rgba(0,0,0,0.03) 18px,transparent 18px, transparent 26px),repeating-linear-gradient(83deg, rgba(0,0,0,0.03) 0px, rgba(0,0,0,0.03) 6px,transparent 6px, transparent 14px,rgba(0,0,0,0.03) 14px, rgba(0,0,0,0.03) 26px,transparent 26px, transparent 38px),repeating-linear-gradient(325deg, rgba(0,0,0,0.03) 0px, rgba(0,0,0,0.03) 12px,transparent 12px, transparent 15px,rgba(0,0,0,0.03) 15px, rgba(0,0,0,0.03) 20px,transparent 20px, transparent 30px),repeating-linear-gradient(148deg, rgba(0,0,0,0.03) 0px, rgba(0,0,0,0.03) 5px,transparent 5px, transparent 7px,rgba(0,0,0,0.03) 7px, rgba(0,0,0,0.03) 12px,transparent 12px, transparent 23px),repeating-linear-gradient(330deg, rgba(0,0,0,0.03) 0px, rgba(0,0,0,0.03) 6px,transparent 6px, transparent 17px,rgba(0,0,0,0.03) 17px, rgba(0,0,0,0.03) 28px,transparent 28px, transparent 29px),repeating-linear-gradient(142deg, rgba(0,0,0,0.03) 0px, rgba(0,0,0,0.03) 6px,transparent 6px, transparent 7px,rgba(0,0,0,0.03) 7px, rgba(0,0,0,0.03) 12px,transparent 12px, transparent 21px),linear-gradient(90deg, hsl(124,0%,91%),hsl(124,0%,91%));
+   position:relative;
+   overflow:hidden;
+}
+
+
+
+.card{
+    height:70%;
+    width:70%;
+    background-color:teal;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background-color: #008080;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%23cdf1f2' fill-opacity='0.79' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");
+    display:flex;
+    place-items:center;
+    justify-content:center;
+    align-items:center;
+    opacity:1;
+    animation:card 3s 9s linear both;
+}
+
+.cardinner{
+    height:90%;
+    width:90%;
+    background-color:#cdf1f2;
+    position:relative;
+    overflow:hidden;
+}
+.balloonmain{
+    height:85%;
+    width:33%;
+    background-color:orange;
+    display:flex; 
+   justify-content:center;
+   border-radius: 0px 0px 100px 100px;
+    
+}
+.b1{
+    position:absolute;
+    top:0%;
+    left:0%;
+}
+.b2{
+    position:absolute;
+    top:0%;
+    left:33.5%;
+}
+.b3{
+    position:absolute;
+    top:0%;
+    left:67%;
+}
+.balloonin{
+    height:40%;
+    width:100%;
+    position:absolute;
+    top:2%;
+   background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    border-radius:50%;
+    z-index:1;
+    
+}
+.ballooninin{
+    height:95%;
+    width:95%;
+    background-color: #06bcfb;
+    background-image: linear-gradient(315deg,     #06bcfb 0%, #4884ee 74%);
+    border-radius:50%;
+    z-index:1;
+}
+.line{
+    position:absolute; 
+    height:60%;
+    width:3%;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    top:25%;
+    
+}
+
+.b1, .b2, .b3{
+   background-color: #89d8d3;
+background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+opacity:1;
+animation:bln 3s 13s linear both;
+opacity:1;
+
+}
+
+.sc{
+    height:85%;
+    width:100%;
+    background-color:blue;
+    border-radius: 0px 0px 100px 100px;
+    background-image: linear-gradient(45deg, transparent 0%, transparent 55%,rgba(64, 64, 64,0.04) 55%, rgba(64, 64, 64,0.04) 76%,transparent 76%, transparent 100%),linear-gradient(135deg, transparent 0%, transparent 14%,rgba(64, 64, 64,0.04) 14%, rgba(64, 64, 64,0.04) 41%,transparent 41%, transparent 100%),linear-gradient(45deg, transparent 0%, transparent 2%,rgba(64, 64, 64,0.04) 2%, rgba(64, 64, 64,0.04) 18%,transparent 18%, transparent 100%),linear-gradient(135deg, transparent 0%, transparent 61%,rgba(64, 64, 64,0.04) 61%, rgba(64, 64, 64,0.04) 71%,transparent 71%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    animation:circle 3s 18s linear both;
+    padding:5px;
+    font-family:'Sofia';
+    line-height:20px;
+    text-align:center;
+}
+
+
+
+@keyframes bln{
+    
+    100%{
+        height:0;
+        opacity:0;
+    }
+}
+
+.p{
+    height:35%;
+    width:45%;
+    /*border-radius:50%;*/ background-image:url("https://api.sololearn.com/Uploads/Avatars/18669173.jpg");
+    background-size:100% 100%;
+    border:7px teal double;
+    opacity:0.5;
+}
+
+
+.footer{
+    position:absolute;
+    bottom:5%;
+    height:15%;
+    width:100%;
+    background-color:teal;
+    text-align:center;
+    z-index:2;
+    font-family:'Asset';
+    padding-top:3px;
+    
+}
+
+p{
+    color:#E52B50;
+    font-size:1.4rem;
+}
+.t{
+     -webkit-text-fill-color: rgba(0,200,200,0.1);
+     -webkit-background-clip:text ;   background-image:url("https://i.pinimg.com/originals/95/58/b9/9558b95660d31cdbfb19167da2a707f4.gif");
+     font-size:1.4rem;
+}
+
+.f1{
+    background-color:transparent;
+}
+.s{
+    position:absolute ;
+    top:0%;
+    height:85%;
+    width:100%;
+    background-color:blue;
+    border-radius: 0px 0px 100px 100px;
+    animation:circle 3s 23s linear both;
+    padding:5px;
+    font-family:'Sofia';
+    line-height:20px;
+    text-align:center;
+    background-image: linear-gradient(158deg, rgba(84, 84, 84, 0.03) 0%, rgba(84, 84, 84, 0.03) 20%,rgba(219, 219, 219, 0.03) 20%, rgba(219, 219, 219, 0.03) 40%,rgba(54, 54, 54, 0.03) 40%, rgba(54, 54, 54, 0.03) 60%,rgba(99, 99, 99, 0.03) 60%, rgba(99, 99, 99, 0.03) 80%,rgba(92, 92, 92, 0.03) 80%, rgba(92, 92, 92, 0.03) 100%),linear-gradient(45deg, rgba(221, 221, 221, 0.02) 0%, rgba(221, 221, 221, 0.02) 14.286%,rgba(8, 8, 8, 0.02) 14.286%, rgba(8, 8, 8, 0.02) 28.572%,rgba(52, 52, 52, 0.02) 28.572%, rgba(52, 52, 52, 0.02) 42.858%,rgba(234, 234, 234, 0.02) 42.858%, rgba(234, 234, 234, 0.02) 57.144%,rgba(81, 81, 81, 0.02) 57.144%, rgba(81, 81, 81, 0.02) 71.42999999999999%,rgba(239, 239, 239, 0.02) 71.43%, rgba(239, 239, 239, 0.02) 85.71600000000001%,rgba(187, 187, 187, 0.02) 85.716%, rgba(187, 187, 187, 0.02) 100.002%),linear-gradient(109deg, rgba(33, 33, 33, 0.03) 0%, rgba(33, 33, 33, 0.03) 12.5%,rgba(147, 147, 147, 0.03) 12.5%, rgba(147, 147, 147, 0.03) 25%,rgba(131, 131, 131, 0.03) 25%, rgba(131, 131, 131, 0.03) 37.5%,rgba(151, 151, 151, 0.03) 37.5%, rgba(151, 151, 151, 0.03) 50%,rgba(211, 211, 211, 0.03) 50%, rgba(211, 211, 211, 0.03) 62.5%,rgba(39, 39, 39, 0.03) 62.5%, rgba(39, 39, 39, 0.03) 75%,rgba(55, 55, 55, 0.03) 75%, rgba(55, 55, 55, 0.03) 87.5%,rgba(82, 82, 82, 0.03) 87.5%, rgba(82, 82, 82, 0.03) 100%),linear-gradient(348deg, rgba(42, 42, 42, 0.02) 0%, rgba(42, 42, 42, 0.02) 20%,rgba(8, 8, 8, 0.02) 20%, rgba(8, 8, 8, 0.02) 40%,rgba(242, 242, 242, 0.02) 40%, rgba(242, 242, 242, 0.02) 60%,rgba(42, 42, 42, 0.02) 60%, rgba(42, 42, 42, 0.02) 80%,rgba(80, 80, 80, 0.02) 80%, rgba(80, 80, 80, 0.02) 100%),linear-gradient(120deg, rgba(201,233,232, 0.24) 0%, rgba(201,233,232, 0.24) 14.286%,rgb(200,224,221) 14.286%, rgb(200,224,221) 28.572%,rgba(152,177,172, 0.42) 28.572%, rgba(152,177,172, 0.42) 42.858%,rgba(158,184,168, 0.32) 42.858%, rgba(158,184,168, 0.32) 57.144%,rgba(186,209,209, 0.6) 57.144%, rgba(186,209,209, 0.6) 71.42999999999999%,rgba(149,191,180, 0.31) 71.43%, rgba(149,191,180, 0.31) 85.71600000000001%,rgba(156,209,195, 0.3) 85.716%, rgba(156,209,195, 0.3) 100.002%),linear-gradient(45deg, rgba(198,228,223, 0.4) 0%, rgba(198,228,223, 0.4) 16.667%,rgba(172,209,211, 0.43) 16.667%, rgba(172,209,211, 0.43) 33.334%,rgba(171,238,238, 0.33) 33.334%, rgba(171,238,238, 0.33) 50.001000000000005%,rgba(117,185,185, 0.35) 50.001%, rgba(117,185,185, 0.35) 66.668%,rgba(167,231,234, 0.49) 66.668%, rgba(167,231,234, 0.49) 83.33500000000001%,rgba(29,181,205, 0.25) 83.335%, rgba(29,181,205, 0.25) 100.002%),linear-gradient(59deg, rgba(224, 224, 224, 0.03) 0%, rgba(224, 224, 224, 0.03) 12.5%,rgba(97, 97, 97, 0.03) 12.5%, rgba(97, 97, 97, 0.03) 25%,rgba(143, 143, 143, 0.03) 25%, rgba(143, 143, 143, 0.03) 37.5%,rgba(110, 110, 110, 0.03) 37.5%, rgba(110, 110, 110, 0.03) 50%,rgba(34, 34, 34, 0.03) 50%, rgba(34, 34, 34, 0.03) 62.5%,rgba(155, 155, 155, 0.03) 62.5%, rgba(155, 155, 155, 0.03) 75%,rgba(249, 249, 249, 0.03) 75%, rgba(249, 249, 249, 0.03) 87.5%,rgba(179, 179, 179, 0.03) 87.5%, rgba(179, 179, 179, 0.03) 100%),linear-gradient(241deg, rgba(58, 58, 58, 0.02) 0%, rgba(58, 58, 58, 0.02) 25%,rgba(124, 124, 124, 0.02) 25%, rgba(124, 124, 124, 0.02) 50%,rgba(254, 254, 254, 0.02) 50%, rgba(254, 254, 254, 0.02) 75%,rgba(52, 52, 52, 0.02) 75%, rgba(52, 52, 52, 0.02) 100%),linear-gradient(90deg, #ffffff,#ffffff);
+    
+}
+.i{
+    position:absolute ;
+    top:0%;
+    height:85%;
+    width:100%;
+    background-color:grey;
+    border-radius: 0px 0px 100px 100px;
+    animation:circle 3s 13s linear both;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6wjPUunGYXx8EDku2hiLDbCmsfaApWmQfKw&usqp=CAU");
+    background-size:100% 100%;
+    
+}
+.e{
+    position:absolute ;
+    top:0%;
+    height:85%;
+    width:100%;
+    background-color:grey;
+    border-radius: 0px 0px 100px 100px;
+    animation:circle 3s 28s linear both;
+    background-image:url("https://media.tenor.com/images/ebab2c96748cfb9c15d7644dec758c38/tenor.gif");
+    background-size:100% 100%;
+    
+}
+
+@keyframes circle {
+  0% {
+    transform: translateY(-100%) rotateX(80deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.p1{
+    position:absolute;
+    top:5%;
+    animation: right 2s 3s both;
+}
+.p2{
+    position:absolute;
+    top:5%;
+    left:55%;
+    animation: left 2s 4s both;
+}
+.p3{
+    position:absolute;
+    bottom:5%;
+    animation: right 2s 5s both;
+}
+.p4{
+    position:absolute;
+    bottom:5%;
+    left:55%;
+    animation: left 2s 6s both;
+}
+
+
+    
+@keyframes right {
+  0% {
+    transform: translateX(-100%);
+    
+  }
+  100% {
+    transform: translateX(0);
+    
+  }
+}
+
+@keyframes left{
+  0% {
+    transform: translateX(100%);
+    
+  }
+  100% {
+    transform: translateX(0);
+    
+  }
+}
+
+@keyframes card{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.linev{
+    height:100vh;
+    width:2vw;
+    background-color: #E2FCFA;
+    position:absolute;
+}
+
+.line1{
+    left:46%;
+    animation:line1 2s 3s linear both ;
+}
+.line2{
+    left:52%;
+    animation:line2 2s 4s linear both ;
+}
+.lineh{
+    width:100vw;
+    height:1.5vh;
+    background-color:#E2FCFA;
+    position:absolute;
+    
+}
+
+.line3{
+    top:48%;
+    animation:line3 2s 4s linear both ;
+}
+.line4{
+    top:53%;
+    animation:line4 2s 3s linear both ;
+}
+
+@keyframes line1{
+    0%{
+        transform:translateY(100%);
+    }
+}
+
+@keyframes line2{
+    0%{
+        transform:translateY(-100%);
+    }
+}
+@keyframes line3{
+    0%{
+        transform:translateX(100%);
+    }
+}
+
+@keyframes line4{
+    0%{
+        transform:translateX(-100%);
+    }
+}
+
+.p{
+    box-shadow:0 0 2vmin 2vmin #2223;
+}
+.card{
+    box-shadow:0 0 1vmin 1vmin #2227;
+}
+.cardinner{
+    box-shadow:0 0 3vmin 3vmin #2225;
+}
+
+.footer{
+    box-shadow:0 0 0.5vmin 0.5vmin #2223;
+}
+
+.sc, .i, .e, .s{
+    box-shadow:0 0 0.5vmin 0.5vmin #2223;
+}
+
+    </style>
+    <audio controls style=" display:none;" loop   id="a"  >
+ <source src="https://dl.dropbox.com/s/shitjsb5vys4c9e/HAPPY%20BIRTHDAY%20TO%20YOU%20A%20Birthday%20Rhyme%20For%20Children%20By%20Funzoa%20Mimi%20Teddy%20Funzoa%20Kids%20Rhymes.mp3?dl=0">
+    <script>
+     Swal.fire('Happy birthday Satnam Sir🎊\n A small try🧗‍♀️ to express my gratitude🤗 \n It is quite simple😕 and boring😥 as I am a beginner😔 ')
+        </script>  
+      </audio> 
+      <div class="page1">
+          <div class="linev line1"></div>
+          <div class="linev line2"></div>
+          <div class="lineh line3"></div>
+          <div class="lineh line4"></div>
+           <div class="p p1"></div>  
+          <div class="p p2"></div>  
+          <div class="p p3"></div>  
+          <div class="p p4"></div>  
+          <div class="card">
+              <div class="cardinner">
+                  <div class="footer"><p>Happy Birthday</p></div>
+                  <div class="footer f1"><p class="t">Happy Birthday</p></div>
+                  <!--balloon section-->
+                  <div class="balloonmain b1">
+                     <div class="balloonin">
+                       <div class="ballooninin">
+                          </div>
+                          
+                      </div>
+                    <div class="line"></div>  
+                  </div><!--end of class balloonmain-->
+               <div class="balloonmain b2">
+                     <div class="balloonin">
+                       <div class="ballooninin">
+                          </div>
+                          
+                      </div>
+                    <div class="line"></div>  
+                  </div><!--end of class balloonmain-->
+                  
+                   <div class="balloonmain b3">
+                     <div class="balloonin">
+                       <div class="ballooninin">
+                          </div>
+                          
+                      </div>
+                    <div class="line"></div>  
+                  </div><!--end of class balloonmain-->  
+           <!--BALLOON SECTION ENDS-->
+           <div class="i"></div>
+           <div class="sc">
+           Instead of counting candles,
+Or tallying the years,
+Contemplate your blessings now,
+As your birthday nears.
+
+Consider special people
+Who love you, and who care,
+And others who've enriched your life
+Just by being there.
+
+Think about the memories
+Passing years can never mar,
+Experiences great and small
+That have made you who you are.
+
+Another year is a happy gift,
+So cut your cake, and say,
+"Instead of counting birthdays,
+I count blessings every day!"</div>   
+ <div class="s">
+           
+May you have a special day,
+May your heart be full of cheer,
+May love and laughter find you,
+May your smiles be ear to ear. 
+
+May your joy be everlasting,
+May only good things come your way,
+May all your prayers be answered,
+May you be blessed on your birthday<br>
+
+Thankkk youuu sooo much always meri help krne k liyr, ek bade bhaiya ki tarah mujhe har waqt smjhane k liye and har time calmly meri har problem chahe code related ho chahe life related solve krne k liye.
+
+</div>      
+<div class="e"></div>
+              </div><!--end of class cardinner-->
+          </div><!--end of class card-->
+         
+      </div> <!--end of class page-->
+    </body>
+</html>
